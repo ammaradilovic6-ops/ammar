@@ -33,9 +33,9 @@
   --muted: oklch(0.2 0.004 260);
   --muted-foreground: oklch(0.62 0.006 260);
   --border: oklch(0.28 0.005 260);
-  /* very restrained warm bone accent */
-  --accent: oklch(0.82 0.045 75);
-  --accent-foreground: oklch(0.15 0.01 75);
+  /* signature orange accent — used selectively */
+  --accent: #ff5a36;
+  --accent-foreground: oklch(0.16 0.01 30);
   --primary: oklch(0.96 0.004 260);
   --primary-foreground: oklch(0.13 0.004 260);
 }
