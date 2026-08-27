@@ -57,9 +57,9 @@ export const projects: Project[] = [
     shortForm: ['admir-shortform-01.mp4', 'admir-shortform-02.mp4'],
   },
   {
-    slug: 'kenny-marshall',
+    slug: 'kenny-marshal',
     index: '03',
-    title: 'KENNY MARSHALL',
+    title: 'KENNY MARSHAL',
     role: 'FILMED & EDITED',
     categories: ['VIDEOGRAPHY', 'EDITING', 'PRODUCTION'],
     summary: 'A long-form piece, filmed and edited end to end.',
@@ -101,6 +101,20 @@ export type ShortFormVideo = {
   client: string
   label: string
 }
+
+export type LongFormVideo = {
+  youtubeId: string
+  featured?: boolean
+}
+
+// Real long-form / featured videos. Kenny Marshal is the featured piece and
+// also appears on the home page. Titles are pulled live from YouTube — none invented.
+export const longFormVideos: LongFormVideo[] = [
+  { youtubeId: 'LRIP0yRXU20', featured: true },
+  { youtubeId: 'l7b7hpGra8U' },
+  { youtubeId: 'mi5nyErchKA' },
+  { youtubeId: 'd2uj8zEG9EA' },
+]
 
 export const shortFormVideos: ShortFormVideo[] = [
   { src: 'gordon-shortform-01.mp4', client: 'GORDON KAST', label: 'SHORT-FORM EDITING' },

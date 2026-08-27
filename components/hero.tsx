@@ -7,9 +7,8 @@ export function Hero() {
       {/* top meta row */}
       <div className="mx-auto flex w-full max-w-[1400px] items-start justify-between">
         <div className="animate-[fadein_1s_ease_forwards] opacity-0 [animation-delay:120ms]">
-          <p className="font-display text-2xl font-bold tracking-tight md:text-3xl">.AMR</p>
-          <p className="mt-1 text-xs tracking-[0.25em] text-muted-foreground">
-            AMMAR ADILOVIĆ
+          <p className="text-xs tracking-[0.25em] text-muted-foreground">
+            PERSONAL PORTFOLIO
           </p>
         </div>
         <div className="hidden text-right text-xs leading-relaxed tracking-[0.2em] text-muted-foreground md:block animate-[fadein_1s_ease_forwards] opacity-0 [animation-delay:200ms]">
@@ -19,30 +18,21 @@ export function Hero() {
         </div>
       </div>
 
-      {/* headline */}
-      <div className="mx-auto w-full max-w-[1400px]">
-        <h1 className="font-display font-bold uppercase leading-[0.86] tracking-[-0.02em]">
+      {/* headline — centered */}
+      <div className="mx-auto w-full max-w-[1400px] text-center">
+        <h1 className="font-display font-bold uppercase leading-[0.86] tracking-[-0.03em]">
           <span className="block overflow-hidden">
-            <span className="block animate-[rise_1s_cubic-bezier(0.16,1,0.3,1)_forwards] text-[clamp(2.25rem,11.5vw,10rem)]">
-              Video
-            </span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="block animate-[rise_1s_cubic-bezier(0.16,1,0.3,1)_forwards] text-[clamp(2.25rem,11.5vw,10rem)] text-muted-foreground [animation-delay:100ms]">
-              Editor
-            </span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="block animate-[rise_1s_cubic-bezier(0.16,1,0.3,1)_forwards] text-[clamp(2.25rem,11.5vw,10rem)] [animation-delay:200ms]">
-              Videographer
-            </span>
-          </span>
-          <span className="block overflow-hidden">
-            <span className="block animate-[rise_1s_cubic-bezier(0.16,1,0.3,1)_forwards] text-[clamp(2.25rem,11.5vw,10rem)] text-muted-foreground [animation-delay:300ms]">
-              Motion Designer
+            <span className="block animate-[rise_1s_cubic-bezier(0.16,1,0.3,1)_forwards] text-[clamp(5rem,26vw,20rem)]">
+              AMR
             </span>
           </span>
         </h1>
+        <p className="mt-6 animate-[fadein_1s_ease_forwards] text-sm font-medium tracking-[0.35em] text-foreground opacity-0 [animation-delay:400ms] md:text-base">
+          AMMAR ADILOVIĆ
+        </p>
+        <p className="mt-3 animate-[fadein_1s_ease_forwards] text-sm tracking-[0.2em] text-muted-foreground opacity-0 [animation-delay:500ms] md:text-base">
+          Video Editor · Videographer · Motion Designer
+        </p>
       </div>
 
       {/* bottom row */}

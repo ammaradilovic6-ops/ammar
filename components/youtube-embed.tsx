@@ -35,6 +35,13 @@ export function YouTubeEmbed({
             alt={`${title} — long-form video thumbnail`}
             className="h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-[1.03]"
             loading="lazy"
+            onError={(e) => {
+              const img = e.currentTarget
+              if (!img.dataset.fallback) {
+                img.dataset.fallback = '1'
+                img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+              }
+            }}
           />
           <span className="absolute inset-0 bg-background/20 transition-colors group-hover:bg-background/10" />
           <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-foreground/60 bg-background/40 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110 md:h-20 md:w-20">

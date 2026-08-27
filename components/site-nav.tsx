@@ -42,7 +42,7 @@ export function SiteNav() {
           className="font-display text-lg font-bold tracking-tight text-foreground"
           onClick={() => setOpen(false)}
         >
-          .AMR
+          AMR
         </Link>
 
         <ul className="hidden items-center gap-10 md:flex">
